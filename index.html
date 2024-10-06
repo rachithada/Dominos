@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Dominos</title>
+</head>
+<body>
+    <div id="main">
+        <nav>
+            <a href="#">Logo</a>
+            <div id="cntr-nav">
+                <a href="#">Pizza</a>
+                <a href="#">Shops</a>
+                <a href="#">Contact</a>
+                <a href="#">cart</a>
+            </div>
+            <i class="ri-menu-fill"></i>
+        </nav>
+        <div class="one">
+            <h1>PIZZA</h1>
+            <img id="onionSlice" src="onionSlice.png" alt="">
+            <img id="tomato-one" src="tomatoFull.png" alt="">
+            <img id="tomato-two" src="tomatoFull.png" alt="">
+            <img id="tomato-three" src="tomatoFull.png" alt="">
+            <img id="pizzaAnime" src="pizzaAnime.png" alt="">
+            <img id="basil" src="basil.png" alt="">
+            <img id="tomato" src="tomato.png" alt="">
+            <img id="onion" src="onion.png" alt="">
+        </div>
+        <div class="two">
+            <div class="left-two">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="red" d="M24.9,-24.7C28.6,-15.2,25.4,-5,21.3,1.6C17.2,8.3,12.1,11.5,4.1,19.5C-3.9,27.6,-14.8,40.5,-17.6,38.4C-20.4,36.3,-15.1,19.3,-11.5,9.9C-7.9,0.4,-5.9,-1.4,-4.3,-10.4C-2.7,-19.4,-1.3,-35.7,4.6,-39.4C10.6,-43.1,21.1,-34.2,24.9,-24.7Z" transform="translate(100 100)" />
+                  </svg>
+            </div>
+            <div class="right-two">
+                <h1>Thin Crust</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ex, repellat numquam saepe eius amet autem dignissimos repudiandae dolorem voluptatibus maiores facilis? Nulla dolor magnam sed quos autem, ipsum odio, fugiat provident totam, consectetur obcaecati magni doloremque. Maxime corporis modi consequuntur qui! Praesentium voluptatibus porro ab autem asperiores nam temporibus?</p>
+            </div>
+        </div>
+        <div class="three">
+            <div class="card">
+                <img class="pepperoni" src="pepperoni.png" alt="">
+                <h1>Pepperoni</h1>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <h1>Onion</h1>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <img class="vegPizza" src="vegPizza.png" alt="">
+                <h1>Veg Pizza</h1>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+<script>
+VANTA.DOTS({
+  el: ".one",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  size: 2.00,
+  spacing: 16.00,
+  showLines: false,
+});
+
+</script>
+    <script src="script.js"></script>
+</body>
+</html>

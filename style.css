@@ -1,0 +1,414 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 10vw;
+    height: 10vh;
+    width: 100%;
+    z-index: 10;
+}
+
+nav a{
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: #FF204E;
+    font-weight: bolder;
+}
+
+#cntr-nav{
+    display: flex;
+    gap: 3vw;
+}
+
+nav i{
+    color: #FF204E;
+    font-size: 1.5vw;
+}
+
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #ffe0b2, #fff9c4);
+}
+
+.one h1{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 23vw;
+    background: linear-gradient(45deg, #ff7f7f, #ffb07c); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;  
+}
+
+#onion{
+    position: absolute;
+    width: 24%;
+    z-index: 2;
+}
+
+#onionSlice{
+    position: absolute;
+    width: 10%;
+    left: 38%;
+    top: 49%;
+}
+
+#tomato{
+    position: absolute;
+    top: 23%;
+    left: 39%;
+    width: 10%;
+    z-index: 1;
+}
+
+#basil{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 10%;
+    z-index: 3;
+}
+
+#tomato-one{
+    position: absolute;
+    width: 10%;
+    top: 75%;
+    left: 3%;
+}
+#tomato-two{
+    position: absolute;
+    width: 8%;
+    top: 80%;
+    left: 7%;
+    rotate: 30deg;
+}
+#tomato-three{
+    position: absolute;
+    width: 9%;
+    top: 80%;
+    left: -1%;
+    rotate: -30deg;
+}
+#pizzaAnime{
+    position: absolute;
+    top: 0%;
+    width: 14%;
+    left: 86%;
+    rotate: 90deg;
+}
+
+.two{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left-two{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: #F6AE2D;
+}
+
+.right-two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #F6AE2D;
+}
+
+.left-two svg{
+    position: absolute;
+    top: 118%;
+    width: 50%;
+    left: -3%;
+    rotate: 70deg;
+}
+
+.right-two h1{
+    color: #E63946;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.right-two p{
+    padding: 10px;
+    font-size: 1.1vw;
+    color: darkgreen;
+}
+
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #ff7f7f, #ffb07c); 
+}
+
+.card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    border-radius: 50%;
+    height: 60vh;
+    width: 30vw;
+    background-color: #fff;
+}
+
+.card:nth-child(1){
+    background: linear-gradient(135deg, #ff6347, #ff8c00);
+}
+
+.card:nth-child(2){
+    background: linear-gradient(135deg, #2e8b57, #3cb371, #98fb98);
+}
+
+.card:nth-child(3){
+    background: linear-gradient(135deg, #ffcccb, #ff9999, #ff6666);
+
+}
+
+.card h1{
+    margin-top: 43vh;
+    font-size: 3vw;
+}
+
+.card button{
+    padding: 1vw 1vw;
+    border-radius: 50px;
+    background-color: pink;
+    border: none;
+}
+
+.pepperoni{
+    top: -10%;
+    position: absolute;
+    height: 80%;
+    width: 85%;
+}
+
+/* .onion{
+    top: -15%;
+    position: absolute;
+    height: 96%;
+    width: 94%;
+} */
+
+.vegPizza{
+    top: -10%;
+    position: absolute;
+    height: 77%;
+    width: 85%;
+}
+
+#vanta-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Or height of the section you want */
+    z-index: -1; /* Push behind other content */
+  }
+  
+  @media (max-width: 799px){
+    #cntr-nav{
+        display: none;
+    }
+    .ri-menu-fill{
+        font-size: 7vw;
+        position: relative;
+        left: -6%;
+    }
+    nav a{
+        font-size: 7vw;
+    }
+    .one h1 {
+        position: absolute;
+        top: 39%;
+        left: 5%;
+        font-size: 32vw;
+        background: linear-gradient(45deg, #ff7f7f, #ffb07c);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    #pizzaAnime{
+        display: flex;
+        top: 24%;
+        left: 65%;
+        width: 34%;
+    }
+
+    #onionSlice {
+        position: absolute;
+        width: 13%;
+        left: 27%;
+        top: 41%;
+    }
+
+
+    #onion {
+        position: absolute;
+        width: 34%;
+        z-index: 2;
+        left: 28%;
+    }
+
+    #basil {
+        position: absolute;
+        top: 53%;
+        left: 47%;
+        width: 12%;
+        z-index: 2;
+    }
+
+    #tomato {
+        position: absolute;
+        top: 41%;
+        left: 50%;
+        width: 13%;
+        z-index: 1;
+    }
+
+    #tomato-three {
+        position: absolute;
+        width: 16%;
+        top: 87%;
+        left: 3%;
+        rotate: -30deg;
+    }
+
+    #tomato-two {
+        position: absolute;
+        width: 17%;
+        top: 87%;
+        left: 18%;
+        rotate: 30deg;
+    }
+
+    #tomato-one {
+        position: absolute;
+        width: 17%;
+        top: 84%;
+        left: 11%;
+    }
+
+    .two{
+        flex-direction: column;
+    }
+    .left-two{
+        background-color: transparent;
+        width: 100%;
+    }
+    .right-two{
+        background-color: transparent;
+        width: 100%;
+    }
+    .right-two h1 {
+        color: #E63946;
+        font-size: 7.5vw;
+        font-weight: bolder;
+        font-style: oblique;
+    }
+
+    .right-two p {
+        padding: 10px;
+        font-size: 3.1vw;
+        color: darkgreen;
+    }
+
+    .left-two svg {
+        position: absolute;
+        top: 126%;
+        width: 80%;
+        left: 8%;
+        rotate: 70deg;
+    }
+
+    .three{
+        flex-direction: column;
+        align-items: center;
+        gap: 8vh;
+        padding: 5vh 0;
+    }
+
+    .pepperoni {
+        top: 10%;
+        position: absolute;
+        height: 80%;
+        width: 85%;
+    }
+
+    .card{
+        margin-top:1.8vh;
+        height: 21vh;
+        position: relative;
+
+    }
+
+    .card h1 {
+        margin-top: 30vh;
+        font-size: 4vw;
+    }
+
+    .card button {
+        margin-top: -1vh;
+        padding: 1vw 3vw;
+        font-size: 3vw;
+        border-radius: 30px;
+        background-color: pink;
+        border: none;
+    }
+
+    .pepperoni{
+        position: absolute;
+        top: -5%;
+        height: 90%;
+        width: 90%;
+    }
+
+    .vegPizza{
+        position: absolute;
+        top: -5%;
+        height: 90%;
+        width: 90%;
+    }
+  }
